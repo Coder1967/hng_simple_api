@@ -7,7 +7,7 @@ app.get("/api", (req, res)=>{
   res.status(200).json({
     slack_name: req.query.slack_name,
     current_day: day,
-    utc_time: d.toISOString(),
+    utc_time: d.toISOString().split(".")[0] + "Z",
     track: req.query.track,
     github_file_url: "https://github.com/coder1967/hng_simple_api/app.js",
     github_repo_url: "https://github.com/coder1967/hng_simple_api",
