@@ -9,7 +9,7 @@ app.get("/api", (req, res)=>{
     current_day: day,
     utc_time: d.toISOString().split(".")[0] + "Z",
     track: req.query.track,
-    github_file_url: "https://github.com/coder1967/hng_simple_api/app.js",
+    github_file_url: "https://github.com/Coder1967/hng_simple_api/blob/main/app.js",
     github_repo_url: "https://github.com/coder1967/hng_simple_api",
     status_code: 200
   }
